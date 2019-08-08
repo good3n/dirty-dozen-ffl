@@ -1,20 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="The Dirty Dozen | Fantasy Football League" />
+    <div>Teams: 12</div>
+    <div>Current Champ: Blah</div>
+    <div>Platform: Yahoo</div >
+    <div>Roster Positions: QB, WR, WR, RB, RB, TE, W / R / T, K, DEF, BN, BN, BN, BN, BN, IR</div>
+    <div>Playoffs: Week 14, 15, and 16 (6 teams)</div>
+    <div>Playoff Tie-Breaker:	Best regular season record vs opponent wins</div>
+    <div>Regular Season Tie-Breaker: None</div>
+    <div>Divisions:	Hello No</div>
+    <div>Trade Review: Commissioner Veto</div>
   </Layout>
 )
 

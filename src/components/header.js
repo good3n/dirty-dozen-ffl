@@ -1,42 +1,49 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+import Logo from "../components/image"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+const StyledHeader = styled.header`
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  align-items: center;
+  padding-top: 30px;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 60px 1fr;
+  }
+
+  nav {
+    justify-self: end;
+
+    a {
+      color: var(--color-text-dark);
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 40px;
+    }
+  }
+`
+
+const LogoLink = styled(Link)`
+  max-width: 170px;
+  display: block;
+
+  @media (max-width: 700px) {
+    max-width: 60px;
+  }
+`;
+
+const Header = () => (
+  <StyledHeader>
+    <LogoLink to="/">
+      <Logo />
+    </LogoLink>
+    <nav>
+      <Link to="/scoring/">Scoring</Link>
+      <Link to="/history/">History</Link>
+    </nav>
+  </StyledHeader>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
