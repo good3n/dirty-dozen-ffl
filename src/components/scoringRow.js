@@ -21,18 +21,13 @@ const StyledScoringRow = styled.div`
     background: #D4D9E2 !important;
   }
 
-  div:nth-of-type(1) {
-    border-right: 1px solid #e2e8f0;
+  div {
     padding: 8px;
-  }
 
-  div:nth-of-type(2) {
-    border-right: 1px solid #e2e8f0;
-    padding: 8px;
-  }
-
-  div:nth-of-type(3) {
-    padding: 8px;
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+      border-right: 1px solid #e2e8f0;
+    }
   }
 `
 
