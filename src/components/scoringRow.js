@@ -18,7 +18,7 @@ const StyledScoringRow = styled.div`
   }
 
   &:hover {
-    background: #D4D9E2 !important;
+    background: #D4D9E2;
   }
 
   div {
