@@ -3,8 +3,7 @@ import styled from "styled-components"
 
 const StyledScoringRow = styled.div`
   display: grid;
-  grid-template-columns: 1.5fr 1fr 2fr;
-  align-items: center;
+  grid-template-columns: 35% 20% 45%;
   font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   font-size: 13px;
   border-bottom: 1px solid #e2e8f0;
@@ -22,7 +21,11 @@ const StyledScoringRow = styled.div`
   }
 
   div {
+    display: flex;
+    align-items: center;
+    height: 100%;
     padding: 8px;
+    box-sizing: border-box;
 
     &:nth-of-type(1),
     &:nth-of-type(2) {

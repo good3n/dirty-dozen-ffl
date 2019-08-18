@@ -25,7 +25,7 @@ const Table = styled.section`
 
   .head {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 2fr;
+    grid-template-columns: 35% 20% 45%;
     background: #e2e8f0;
     color: #4a5568;
     font-weight: 600;
