@@ -26,11 +26,13 @@ const StyledHeader = styled.header`
 `
 
 const LogoLink = styled(Link)`
-  max-width: 170px;
   display: block;
 
   @media (max-width: 700px) {
-    max-width: 60px;
+    .gatsby-image-wrapper {
+      max-width: 60px;
+      height: 60px !important;
+    }
   }
 `;
 
