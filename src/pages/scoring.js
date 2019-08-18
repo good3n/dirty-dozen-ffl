@@ -60,12 +60,12 @@ const ScoringPage = () => (
           <span>Points</span>
           <span>Bonus</span>
         </div>
-        <ScoringRow title="Passing Yards" value="25 yards per point" bonus="1 points at 300 yards; 2 points at 400 yards; 3 points at 500 yards" />
+        <ScoringRow title="Passing Yards" value="25 yards per point" bonus="1 point at 400 yards; 2 points at 500 yards" />
         <ScoringRow title="Passing Touchdowns" value="6" />
-        <ScoringRow title="Interceptions" value="-2" />
+        <ScoringRow title="Interceptions" value="-1" />
         <ScoringRow title="Sacks" value="-1" />
         <ScoringRow title="Rushing Yards" value="10 yards per point" bonus="1 points at 100 yards; 2 points at 200 yards; 3 points at 300 yards" />
-        <ScoringRow title="Receptions" value="1" />
+        <ScoringRow title="Receptions" value="0.5" />
         <ScoringRow title="Receiving Yards" value="10 yards per point" bonus="1 points at 100 yards; 2 points at 200 yards; 3 points at 300 yards" />
         <ScoringRow title="Receiving Touchdowns" value="6" />
         <ScoringRow title="2-Point Conversions" value="2" />
@@ -96,18 +96,18 @@ const ScoringPage = () => (
         <ScoringRow title="Block Kick" value="3" />
         <ScoringRow title="Kickoff and Punt Return Touchdowns" value="6" />
         <ScoringRow title="Points Allowed 0 points" value="10" />
-        <ScoringRow title="Points Allowed 1-6 points" value="8" />
-        <ScoringRow title="Points Allowed 7-13 points" value="6" />
-        <ScoringRow title="Points Allowed 14-20 points" value="4" />
-        <ScoringRow title="Points Allowed 21-27 points" value="2" />
-        <ScoringRow title="Points Allowed 28-34 points" value="0" />
-        <ScoringRow title="Points Allowed 35+ points" value="-2" />
-        <ScoringRow title="Defensive Yards Allowed 0-99" value="10" />
+        <ScoringRow title="Points Allowed 1-6 points" value="7" />
+        <ScoringRow title="Points Allowed 7-13 points" value="4" />
+        <ScoringRow title="Points Allowed 14-20 points" value="1" />
+        <ScoringRow title="Points Allowed 21-27 points" value="0" />
+        <ScoringRow title="Points Allowed 28-34 points" value="-1" />
+        <ScoringRow title="Points Allowed 35+ points" value="-4" />
+        {/* <ScoringRow title="Defensive Yards Allowed 0-99" value="10" />
         <ScoringRow title="Defensive Yards Allowed 100-199" value="7" />
         <ScoringRow title="Defensive Yards Allowed 200-299" value="5" />
         <ScoringRow title="Defensive Yards Allowed 300-399" value="3" />
         <ScoringRow title="Defensive Yards Allowed 400-499" value="1" />
-        <ScoringRow title="Defensive Yards Allowed 500+" value="-2" />
+        <ScoringRow title="Defensive Yards Allowed 500+" value="-2" /> */}
         <ScoringRow title="Extra Point Returned" value="2" />
       </section>
 
