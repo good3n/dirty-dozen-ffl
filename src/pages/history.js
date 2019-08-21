@@ -90,7 +90,7 @@ const HistoryPage = () => (
       <Winners
         first="Jorge Olascoaga"
         second="Omar Olascoaga"
-        third=""
+        third="Jacob Gooden"
       />
     </Season>
     <Season>
