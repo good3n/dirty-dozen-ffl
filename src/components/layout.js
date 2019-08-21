@@ -9,9 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-
-import "../styles/normalize.css"
-import "../styles/global.css"
 import Header from "./header"
 
 const Container = styled.div`
