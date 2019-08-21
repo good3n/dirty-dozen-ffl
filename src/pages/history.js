@@ -5,10 +5,6 @@ import SEO from "../components/seo"
 
 const Season = styled.section`
   margin-top: 50px;
-
-  &:last-of-type {
-    margin-top: 0;
-  }
 `
 
 const StyledWinners = styled.div`
