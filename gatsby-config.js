@@ -2,7 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Dirty Dozen`,
     description: `The Dirty Dozen Fantasy Football League`,
-    author: `@good3n`,
+    author: `Tom Gooden`,
+    url: `https://dirtydozen.netlify.com`, // No trailing slash allowed!
+    image: `/images/logo.png`, // Path to your image you placed in the 'static' folder
+    twitterUsername: `@good3n`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
