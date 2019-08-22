@@ -33,6 +33,7 @@ const StyledWinners = styled.div`
 
   .loser {
     margin-top: 17px;
+    width: 320px;
 
     > span {
       display: block;
@@ -46,6 +47,23 @@ const StyledWinners = styled.div`
       span {
         font-weight: 700;
         display: inline-block;
+      }
+    }
+
+    div {
+      color: #9BC8F5;
+      font-weight: 700;
+      text-align: right;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-top: -15px;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #9BC8F5;
+        display: block;
       }
     }
   }
@@ -87,6 +105,7 @@ const Winners = (props) => (
       {props.four && <span><span>4.</span> {props.four}</span>}
       {props.five && <span><span>5.</span> {props.five}</span>}
       {props.six && <span><span>6.</span> {props.six}</span>}
+      <div>Playoffs</div>
       {props.seven && <span><span>7.</span> {props.seven}</span>}
       {props.eight && <span><span>8.</span> {props.eight}</span>}
       {props.nine && <span><span>9.</span> {props.nine}</span>}
