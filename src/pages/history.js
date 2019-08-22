@@ -3,21 +3,41 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import SEO from "../components/seo"
 
-const Season = styled.section`
-  margin-top: 50px;
+const Seasons = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+
+  @media (max-width: 800px) {
+    grid-gap: 50px;
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+  }
+`
+
+const Season = styled.div`
+  /* margin-top: 50px; */
 `
 
 const StyledWinners = styled.div`
 
   .winner {
     display: grid;
-    grid-template-columns: 150px 170px;
-    grid-row-gap: 100px; // ?
-    width: 320px;
+    grid-template-columns: 1fr 1fr;
     box-sizing: border-box;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 3px;
+
+    @media (max-width: 650px) {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    @media (max-width: 420px) {
+      grid-template-columns: 1fr 1fr;
+    }
 
     > span:first-of-type {
       font-weight: 700;
@@ -33,7 +53,6 @@ const StyledWinners = styled.div`
 
   .loser {
     margin-top: 17px;
-    width: 320px;
 
     > span {
       display: block;
@@ -120,98 +139,100 @@ const Winners = (props) => (
 const HistoryPage = () => (
   <Layout>
     <SEO title="History" />
-    <h1>History</h1>
-    <Season>
-      <h2>2018</h2>
-      <Winners
-        one="Lenny Baily"
-        two="Matt Buzzitta"
-        three="Omar Olascoaga"
-        four="Jorge Olascoaga"
-        five="Dylan Johnston"
-        six="Tom Gooden"
-        seven="Jacob Gooden"
-        eight="Alex Kaiser"
-        nine="Thomas Jean"
-        ten="Danny Grant"
-        eleven="Alec Armstrong"
-        twelve="Eric Watson"
-      />
-    </Season >
-    <Season>
-      <h2>2017</h2>
-      <Winners
-        one="Dylan Johnston"
-        two="Tom Gooden"
-        three="Alec Armstrong"
-        four="Thomas Jean"
-        five="Omar Olascoaga"
-        six="Eric Watson"
-        seven="Danny Grant"
-        eight="Jorge Olascoaga"
-        nine="Jake Elias"
-        ten="Ryan Rossi"
-        eleven="Lenny Bailey"
-        twelve="Jacob Gooden"
-      />
-    </Season>
-    <Season>
-      <h2>2016</h2>
-      <Winners
-        one="Jorge Olascoaga"
-        two="Omar Olascoaga"
-        three="Jacob Gooden"
-        four="Thomas Jean"
-        five="Eric Watson"
-        six="Tom Gooden"
-        seven="Cory Schneider"
-        eight="Jake Elias"
-        nine="Billy Gooden"
-        ten="Ryan Rossi"
-      />
-    </Season>
-    <Season>
-      <h2>2015</h2>
-      <Winners
-        one="Tom Gooden"
-        two="Jacob Gooden"
-        three="Lenny Bailey"
-        four="Jacob Kelly"
-        five="Ryan Rossi"
-        six="Thomas Jean"
-        seven="Robert Scott"
-        eight="Omar Olascoaga"
-        nine="Doug Miller"
-        ten="Steve Perczuk"
-      />
-    </Season>
-    <Season>
-      <h2>2014</h2>
-      <Winners
-        one="Thomas Jean"
-        two="Adam Quidort"
-        three="Jacob Gooden"
-        four="Tom Gooden"
-        five="Nick Summerlee"
-        six="Joe Syzmanski"
-        seven="Lenny Bailey"
-        eight="Rob Hellier"
-      />
-    </Season>
-    <Season>
-      <h2>2013</h2>
-      <Winners
-        one="Angela Green"
-        two="Adam Quidort"
-        three="Liz Ghezzi"
-        four="Garret Berry"
-        five="Rob Hellier"
-        six="Tom Gooden"
-        seven="Jacob Gooden"
-        eight="Kait Bartreau"
-      />
-    </Season>
-  </Layout>
+    <h1 style={{ marginBottom: `50px` }}>History</h1>
+    <Seasons>
+      <Season>
+        <h2>2018</h2>
+        <Winners
+          one="Lenny Baily"
+          two="Matt Buzzitta"
+          three="Omar Olascoaga"
+          four="Jorge Olascoaga"
+          five="Dylan Johnston"
+          six="Tom Gooden"
+          seven="Jacob Gooden"
+          eight="Alex Kaiser"
+          nine="Thomas Jean"
+          ten="Danny Grant"
+          eleven="Alec Armstrong"
+          twelve="Eric Watson"
+        />
+      </Season >
+      <Season>
+        <h2>2017</h2>
+        <Winners
+          one="Dylan Johnston"
+          two="Tom Gooden"
+          three="Alec Armstrong"
+          four="Thomas Jean"
+          five="Omar Olascoaga"
+          six="Eric Watson"
+          seven="Danny Grant"
+          eight="Jorge Olascoaga"
+          nine="Jake Elias"
+          ten="Ryan Rossi"
+          eleven="Lenny Bailey"
+          twelve="Jacob Gooden"
+        />
+      </Season>
+      <Season>
+        <h2>2016</h2>
+        <Winners
+          one="Jorge Olascoaga"
+          two="Omar Olascoaga"
+          three="Jacob Gooden"
+          four="Thomas Jean"
+          five="Eric Watson"
+          six="Tom Gooden"
+          seven="Cory Schneider"
+          eight="Jake Elias"
+          nine="Billy Gooden"
+          ten="Ryan Rossi"
+        />
+      </Season>
+      <Season>
+        <h2>2015</h2>
+        <Winners
+          one="Tom Gooden"
+          two="Jacob Gooden"
+          three="Lenny Bailey"
+          four="Jacob Kelly"
+          five="Ryan Rossi"
+          six="Thomas Jean"
+          seven="Robert Scott"
+          eight="Omar Olascoaga"
+          nine="Doug Miller"
+          ten="Steve Perczuk"
+        />
+      </Season>
+      <Season>
+        <h2>2014</h2>
+        <Winners
+          one="Thomas Jean"
+          two="Adam Quidort"
+          three="Jacob Gooden"
+          four="Tom Gooden"
+          five="Nick Summerlee"
+          six="Joe Syzmanski"
+          seven="Lenny Bailey"
+          eight="Rob Hellier"
+        />
+      </Season>
+      <Season>
+        <h2>2013</h2>
+        <Winners
+          one="Angela Green"
+          two="Adam Quidort"
+          three="Liz Ghezzi"
+          four="Garret Berry"
+          five="Rob Hellier"
+          six="Tom Gooden"
+          seven="Jacob Gooden"
+          eight="Kait Bartreau"
+        />
+      </Season>
+    </Seasons>
+  </Layout >
 )
 
 export default HistoryPage
