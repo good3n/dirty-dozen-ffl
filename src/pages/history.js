@@ -142,6 +142,23 @@ const HistoryPage = () => (
     <h1 style={{ marginBottom: `50px` }}>History</h1>
     <Seasons>
       <Season>
+        <h2>2019</h2>
+        <Winners
+          one="Erik Van Fossen"
+          two="Tom Gooden"
+          three="Dylan Johnston"
+          four="Omar Olascoaga"
+          five="Matt Buzzitta"
+          six="Alec Armstrong"
+          seven="Jacob Gooden"
+          eight="Doug Miller"
+          nine="Lenny Bailey"
+          ten="Eric Watson"
+          eleven="Danny Grant"
+          twelve="Jorge Olascoaga"
+        />
+      </Season >
+      <Season>
         <h2>2018</h2>
         <Winners
           one="Lenny Baily"
