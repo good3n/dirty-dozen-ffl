@@ -34,7 +34,7 @@ const LogoLink = styled(Link)`
       height: 60px !important;
     }
   }
-`;
+`
 
 const Header = () => (
   <StyledHeader>
@@ -43,6 +43,7 @@ const Header = () => (
     </LogoLink>
     <nav>
       <Link to="/scoring/">Scoring</Link>
+      <Link to="/rules/">Rules</Link>
       <Link to="/history/">History</Link>
     </nav>
   </StyledHeader>
