@@ -34,7 +34,7 @@ const RulesPage = () => (
           differently. There is no set standard on what a player is worth.
           Generally a trade should fill a need for both teams. That need is
           determined only by the manager of that team and no one else. In
-          addition to player valuations being subject, there is no way to
+          addition to player valuations being subjective, there is no way to
           actually predict the outcome of a trade. There are plenty of scenarios
           where a trade that appears to lean heavily in favor of one side ends
           up doing just the opposite. In any trade there is a possibility of a
