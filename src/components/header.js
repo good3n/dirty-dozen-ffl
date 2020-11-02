@@ -5,9 +5,11 @@ import Logo from "../components/image"
 
 const StyledHeader = styled.header`
   display: grid;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: 70px 1fr;
   align-items: center;
-  padding-top: 30px;
+  padding: 20px 0;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #edf2f7;
 
   @media (max-width: 700px) {
     grid-template-columns: 60px 1fr;
