@@ -22,7 +22,6 @@ const Season = styled.div`
 `
 
 const StyledWinners = styled.div`
-
   .winner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -70,7 +69,7 @@ const StyledWinners = styled.div`
     }
 
     div {
-      color: #9BC8F5;
+      color: #9bc8f5;
       font-weight: 700;
       text-align: right;
       text-transform: uppercase;
@@ -81,7 +80,7 @@ const StyledWinners = styled.div`
         content: "";
         width: 100%;
         height: 1px;
-        background: #9BC8F5;
+        background: #9bc8f5;
         display: block;
       }
     }
@@ -92,7 +91,11 @@ const Winners = (props) => (
   <StyledWinners>
     <div className="winner" style={{ background: `#FBF3DF` }}>
       <span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.93 30.93" style={{ fill: `#FFBE01` }}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 30.93 30.93"
+          style={{ fill: `#FFBE01` }}
+        >
           <path d="M24.8 4.45c.01-.95-.03-1.55-.03-1.55H6.16s-.03.6-.01 1.55H0v1.01c0 .23.04 5.68 3.4 8.67A7.6 7.6 0 0 0 8.62 16c.31 0 .63-.02.96-.05a8.95 8.95 0 0 0 4.05 3.29v4.45H9.14v2.78H7.68v1.56h15.57v-1.56h-1.48v-2.78H17.3v-4.45a8.96 8.96 0 0 0 4.05-3.29c.33.03.65.05.96.05a7.6 7.6 0 0 0 5.22-1.87c3.36-2.99 3.4-8.44 3.4-8.67v-1h-6.14zM4.74 12.62C2.83 10.92 2.26 8 2.1 6.48h4.16c.18 1.9.6 4.29 1.55 6.38.17.38.36.75.54 1.1a5.58 5.58 0 0 1-3.59-1.34zm21.43 0a5.57 5.57 0 0 1-3.6 1.34c.2-.35.38-.72.55-1.1a20.2 20.2 0 0 0 1.55-6.38h4.15c-.16 1.53-.73 4.44-2.65 6.14z" />
         </svg>
         Champion:
@@ -102,7 +105,11 @@ const Winners = (props) => (
 
     <div className="winner" style={{ background: `#F2F4F8` }}>
       <span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.93 30.93" style={{ fill: `#B5B7BB` }}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 30.93 30.93"
+          style={{ fill: `#B5B7BB` }}
+        >
           <path d="M24.8 4.45c.01-.95-.03-1.55-.03-1.55H6.16s-.03.6-.01 1.55H0v1.01c0 .23.04 5.68 3.4 8.67A7.6 7.6 0 0 0 8.62 16c.31 0 .63-.02.96-.05a8.95 8.95 0 0 0 4.05 3.29v4.45H9.14v2.78H7.68v1.56h15.57v-1.56h-1.48v-2.78H17.3v-4.45a8.96 8.96 0 0 0 4.05-3.29c.33.03.65.05.96.05a7.6 7.6 0 0 0 5.22-1.87c3.36-2.99 3.4-8.44 3.4-8.67v-1h-6.14zM4.74 12.62C2.83 10.92 2.26 8 2.1 6.48h4.16c.18 1.9.6 4.29 1.55 6.38.17.38.36.75.54 1.1a5.58 5.58 0 0 1-3.59-1.34zm21.43 0a5.57 5.57 0 0 1-3.6 1.34c.2-.35.38-.72.55-1.1a20.2 20.2 0 0 0 1.55-6.38h4.15c-.16 1.53-.73 4.44-2.65 6.14z" />
         </svg>
         Second:
@@ -112,7 +119,11 @@ const Winners = (props) => (
 
     <div className="winner" style={{ background: `#FDF2E6` }}>
       <span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.93 30.93" style={{ fill: `#CD7E32` }}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 30.93 30.93"
+          style={{ fill: `#CD7E32` }}
+        >
           <path d="M24.8 4.45c.01-.95-.03-1.55-.03-1.55H6.16s-.03.6-.01 1.55H0v1.01c0 .23.04 5.68 3.4 8.67A7.6 7.6 0 0 0 8.62 16c.31 0 .63-.02.96-.05a8.95 8.95 0 0 0 4.05 3.29v4.45H9.14v2.78H7.68v1.56h15.57v-1.56h-1.48v-2.78H17.3v-4.45a8.96 8.96 0 0 0 4.05-3.29c.33.03.65.05.96.05a7.6 7.6 0 0 0 5.22-1.87c3.36-2.99 3.4-8.44 3.4-8.67v-1h-6.14zM4.74 12.62C2.83 10.92 2.26 8 2.1 6.48h4.16c.18 1.9.6 4.29 1.55 6.38.17.38.36.75.54 1.1a5.58 5.58 0 0 1-3.59-1.34zm21.43 0a5.57 5.57 0 0 1-3.6 1.34c.2-.35.38-.72.55-1.1a20.2 20.2 0 0 0 1.55-6.38h4.15c-.16 1.53-.73 4.44-2.65 6.14z" />
         </svg>
         Third:
@@ -121,18 +132,53 @@ const Winners = (props) => (
     </div>
 
     <div className="loser">
-      {props.four && <span><span>4.</span> {props.four}</span>}
-      {props.five && <span><span>5.</span> {props.five}</span>}
-      {props.six && <span><span>6.</span> {props.six}</span>}
+      {props.four && (
+        <span>
+          <span>4.</span> {props.four}
+        </span>
+      )}
+      {props.five && (
+        <span>
+          <span>5.</span> {props.five}
+        </span>
+      )}
+      {props.six && (
+        <span>
+          <span>6.</span> {props.six}
+        </span>
+      )}
       <div>Playoffs</div>
-      {props.seven && <span><span>7.</span> {props.seven}</span>}
-      {props.eight && <span><span>8.</span> {props.eight}</span>}
-      {props.nine && <span><span>9.</span> {props.nine}</span>}
-      {props.ten && <span><span>10.</span> {props.ten}</span>}
-      {props.eleven && <span><span>11.</span> {props.eleven}</span>}
-      {props.twelve && <span><span>12.</span> {props.twelve}</span>}
+      {props.seven && (
+        <span>
+          <span>7.</span> {props.seven}
+        </span>
+      )}
+      {props.eight && (
+        <span>
+          <span>8.</span> {props.eight}
+        </span>
+      )}
+      {props.nine && (
+        <span>
+          <span>9.</span> {props.nine}
+        </span>
+      )}
+      {props.ten && (
+        <span>
+          <span>10.</span> {props.ten}
+        </span>
+      )}
+      {props.eleven && (
+        <span>
+          <span>11.</span> {props.eleven}
+        </span>
+      )}
+      {props.twelve && (
+        <span>
+          <span>12.</span> {props.twelve}
+        </span>
+      )}
     </div>
-
   </StyledWinners>
 )
 
@@ -144,7 +190,7 @@ const HistoryPage = () => (
       <Season>
         <h2>2020</h2>
         <Winners
-          one="Joh Allen"
+          one="Josh Allen"
           two="Tom Gooden"
           three="Doug Miller"
           four="Todd Rivard"
