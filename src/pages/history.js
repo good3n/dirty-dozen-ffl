@@ -142,6 +142,23 @@ const HistoryPage = () => (
     <h1 style={{ marginBottom: `50px` }}>History</h1>
     <Seasons>
       <Season>
+        <h2>2020</h2>
+        <Winners
+          one="Joh Allen"
+          two="Tom Gooden"
+          three="Doug Miller"
+          four="Todd Rivard"
+          five="Devin Something"
+          six="Jorge Olascoaga"
+          seven="Lenny Bailey"
+          eight="Matt Buzzitta"
+          nine="Dan Monk"
+          ten="Jacob Gooden"
+          eleven="Omar Olascoaga"
+          twelve="Eric Watson"
+        />
+      </Season>
+      <Season>
         <h2>2019</h2>
         <Winners
           one="Erik Van Fossen"
@@ -157,7 +174,7 @@ const HistoryPage = () => (
           eleven="Danny Grant"
           twelve="Jorge Olascoaga"
         />
-      </Season >
+      </Season>
       <Season>
         <h2>2018</h2>
         <Winners
@@ -174,7 +191,7 @@ const HistoryPage = () => (
           eleven="Alec Armstrong"
           twelve="Eric Watson"
         />
-      </Season >
+      </Season>
       <Season>
         <h2>2017</h2>
         <Winners
@@ -249,7 +266,7 @@ const HistoryPage = () => (
         />
       </Season>
     </Seasons>
-  </Layout >
+  </Layout>
 )
 
 export default HistoryPage
