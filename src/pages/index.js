@@ -22,9 +22,6 @@ const IndexPage = () => (
     <h1>The Dirty Dozen - Fantasy Football League</h1>
     <HomeWrapper>
       <div>
-        Reigning Champion: <span>Josh Allen</span>
-      </div>
-      <div>
         Teams: <span>12</span>
       </div>
       <div>
