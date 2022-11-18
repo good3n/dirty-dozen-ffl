@@ -188,6 +188,23 @@ const HistoryPage = () => (
     <h1 style={{ marginBottom: `50px` }}>History</h1>
     <Seasons>
       <Season>
+        <h2>2022</h2>
+        <Winners
+          one=""
+          two=""
+          three=""
+          four=""
+          five=""
+          six=""
+          seven=""
+          eight=""
+          nine=""
+          ten=""
+          eleven=""
+          twelve=""
+        />
+      </Season>
+      <Season>
         <h2>2021</h2>
         <Winners
           one="Cam Something"

@@ -25,16 +25,16 @@ const IndexPage = () => (
         Teams: <span>12</span>
       </div>
       <div>
-        Platform: <span>Yahoo</span>
+        Platform: <span>Sleeper</span>
       </div>
       <div>
         Roster Positions:{" "}
         <span>
-          QB, WR, WR, RB, RB, TE, W / R / T, K, DEF, BN, BN, BN, BN, BN, IR
+          QB, WR, WR, RB, RB, TE, Flex, K, DEF, BN, BN, BN, BN, BN, IR, IR
         </span>
       </div>
       <div>
-        Playoffs: <span>Week 14, 15, and 16 (6 teams)</span>
+        Playoffs: <span>Week 15, 16, and 17 (6 teams)</span>
       </div>
       <div>
         Playoff Tie-Breaker:{" "}
